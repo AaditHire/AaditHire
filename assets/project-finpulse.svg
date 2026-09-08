@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="178" viewBox="0 0 1000 178" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">FinPulse — financial research terminal</title>
+  <desc id="desc">Equities and crypto research with hybrid retrieval, evidence-only agents, and Streamable HTTP MCP tools. Next.js, Python, Supabase, Groq, MCP.</desc>
+  <rect x=".5" y=".5" width="999" height="177" rx="12" fill="#0D131C" stroke="#354151"/>
+  <path d="M1 22V156" stroke="#9CB7CF" stroke-width="2"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="32" y="33" font-family="'Courier New', monospace" font-size="13" letter-spacing="1.4" fill="#9CB7CF">02 / FINANCIAL RESEARCH</text>
+    <text x="32" y="80" font-size="34" font-weight="700" fill="#F3F6FA">FinPulse</text>
+    <text x="32" y="111" font-size="17" fill="#B9C5D3">Market data to evidence-backed research.</text>
+    <path d="M578 28V122" stroke="#303A47"/>
+    <g font-family="'Courier New', monospace" font-size="15" fill="#CED8E5">
+      <text x="608" y="49">HYBRID RAG</text>
+      <text x="608" y="79">EVIDENCE-ONLY AGENTS</text>
+      <text x="608" y="109">STREAMABLE HTTP MCP</text>
+    </g>
+    <path d="M32 134H968" stroke="#303A47"/>
+    <text x="32" y="160" font-family="'Courier New', monospace" font-size="13" fill="#AAB7C8">NEXT.JS / PYTHON / SUPABASE / GROQ / MCP</text>
+  </g>
+</svg>
