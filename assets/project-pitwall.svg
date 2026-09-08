@@ -1,32 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">F1 Virtual Pitwall V2 — flagship race-strategy system</title>
-  <desc id="desc">Active development. Leakage-controlled historical replay. Held-out 5-lap PIT transition MAE improved from 6.789 seconds to 5.207 seconds. Reported validation: 97 offline and 21 live tests. Python, FastAPI, FastF1, Pydantic.</desc>
-  <rect x=".5" y=".5" width="999" height="389" rx="14" fill="#0D131C" stroke="#354151"/>
-  <path d="M15 1H985" stroke="#EF686D" stroke-width="2"/>
-  <path d="M32 58H968M32 326H968" stroke="#303A47"/>
-  <g font-family="Arial, Helvetica, sans-serif">
-    <g font-family="'Courier New', monospace" font-size="14" letter-spacing="1.5">
-      <text x="32" y="36" fill="#EF777B">01 / FLAGSHIP SYSTEM</text>
-      <text x="968" y="36" text-anchor="end" fill="#A2E0C1">ACTIVE DEVELOPMENT</text>
-    </g>
-    <text x="32" y="109" font-size="38" font-weight="700" letter-spacing="-.8" fill="#F3F6FA">F1 VIRTUAL PITWALL V2</text>
-    <text x="32" y="140" font-size="18" fill="#B9C5D3">Historical race replay. Uncertainty-aware strategy.</text>
-    <rect x="32" y="164" width="576" height="140" rx="8" fill="#171E29" stroke="#354151"/>
-    <text x="52" y="192" font-family="'Courier New', monospace" font-size="14" fill="#C6D0DD">HELD-OUT 5-LAP PIT TRANSITION MAE</text>
-    <text x="52" y="253" font-size="44" font-weight="700" fill="#AAB7C8">6.789s</text>
-    <path d="M233 238H275M265 228L275 238L265 248" stroke="#EF777B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="298" y="253" font-size="48" font-weight="700" fill="#F3F6FA">5.207s</text>
-    <text x="52" y="284" font-size="14" fill="#AAB7C8">Lower error on held-out pit transitions</text>
-    <text x="642" y="186" font-family="'Courier New', monospace" font-size="14" fill="#C6D0DD">REPORTED TEST MATRIX</text>
-    <text x="642" y="244" font-size="43" font-weight="700" fill="#F3F6FA">97</text>
-    <text x="826" y="244" font-size="43" font-weight="700" fill="#F3F6FA">21</text>
-    <path d="M795 206V279" stroke="#354151"/>
-    <g font-family="'Courier New', monospace" font-size="14" fill="#AAB7C8">
-      <text x="642" y="271">OFFLINE</text>
-      <text x="826" y="271">LIVE</text>
-      <text x="32" y="354">PYTHON / FASTAPI / FASTF1 / PYDANTIC</text>
-      <text x="968" y="354" text-anchor="end" fill="#EF777B">LEAKAGE CONTROLLED</text>
-    </g>
-    <text x="32" y="377" font-size="12" fill="#95A3B5">Chronological priors · Causal features · Traffic · Tyre state · Pit obligations</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="252" viewBox="0 0 1000 252" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">F1 Virtual Pitwall V2 — 5.207s MAE</title><desc id="desc">Held-out 5-lap PIT transition MAE 5.207 seconds, down from 6.789 seconds. Validated with 97 offline and 21 live tests. Python, FastAPI, FastF1, Pydantic.</desc>
+<rect x=".5" y=".5" width="999" height="251" rx="16" fill="#0B0D0D" stroke="#293130"/>
+<g font-family="Arial, Helvetica, sans-serif"><path d="M16 1H984" stroke="#5DD6C7" stroke-width="3"/>
+<text x="32" y="35" font-size="14" fill="#5DD6C7" font-weight="700" letter-spacing="1.5">01 / RACE STRATEGY</text>
+<text x="32" y="91" font-size="40" fill="#F4F4F2" font-weight="800" >F1 VIRTUAL</text>
+<text x="32" y="137" font-size="40" fill="#F4F4F2" font-weight="800" >PITWALL V2</text>
+<text x="32" y="174" font-size="17" fill="#A3AAA7" font-weight="400" >97 offline + 21 live tests</text>
+<rect x="611" y="22" width="365" height="168" rx="12" fill="#121616"/>
+<text x="635" y="54" font-size="13" fill="#A3AAA7" font-weight="700" >HELD-OUT 5-LAP PIT TRANSITION</text>
+<text x="635" y="116" font-size="59" fill="#F4CF55" font-weight="800" >5.207s</text>
+<text x="850" y="116" font-size="23" fill="#F4CF55" font-weight="700" >MAE</text>
+<text x="635" y="154" font-size="21" fill="#F4F4F2" font-weight="400" >↓ from 6.789s</text>
+<path d="M32 204H968" stroke="#293130"/>
+<text x="32" y="233" font-size="18" fill="#5DD6C7" font-weight="400" >Python · FastAPI · FastF1 · Pydantic</text></g>
 </svg>

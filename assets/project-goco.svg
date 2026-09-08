@@ -1,19 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="178" viewBox="0 0 1000 178" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">GOCO / GOCO AI — Co-Founder and AI/ML Developer</title>
-  <desc id="desc">Programming education and competitive coding. Learner evidence, contest-safe routing, and grounded post-match responses. FastAPI, JavaCC, SQLite, Ollama, Qwen.</desc>
-  <rect x=".5" y=".5" width="999" height="177" rx="12" fill="#0D131C" stroke="#354151"/>
-  <path d="M1 22V156" stroke="#B5AECA" stroke-width="2"/>
-  <g font-family="Arial, Helvetica, sans-serif">
-    <text x="32" y="33" font-family="'Courier New', monospace" font-size="13" letter-spacing="1.4" fill="#B5AECA">03 / PROGRAMMING EDUCATION</text>
-    <text x="32" y="80" font-size="34" font-weight="700" fill="#F3F6FA">GOCO / GOCO AI</text>
-    <text x="32" y="111" font-size="17" fill="#B9C5D3">Co-Founder &amp; AI/ML Developer</text>
-    <path d="M578 28V122" stroke="#303A47"/>
-    <g font-family="'Courier New', monospace" font-size="15" fill="#CED8E5">
-      <text x="608" y="49">LEARNER EVIDENCE</text>
-      <text x="608" y="79">CONTEST-SAFE ROUTING</text>
-      <text x="608" y="109">GROUNDED POST-MATCH AI</text>
-    </g>
-    <path d="M32 134H968" stroke="#303A47"/>
-    <text x="32" y="160" font-family="'Courier New', monospace" font-size="13" fill="#AAB7C8">FASTAPI / JAVACC / SQLITE / OLLAMA / QWEN</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="140" viewBox="0 0 1000 140" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">GOCO AI — programming education</title><desc id="desc">Co-Founder and AI/ML Developer. FastAPI, JavaCC, SQLite, Ollama, Qwen.</desc>
+<rect x=".5" y=".5" width="999" height="139" rx="16" fill="#0B0D0D" stroke="#293130"/>
+<g font-family="Arial, Helvetica, sans-serif"><path d="M1 20V120" stroke="#F4CF55" stroke-width="3"/>
+<text x="32" y="31" font-size="13" fill="#F4CF55" font-weight="700" letter-spacing="1.5">03 / PROGRAMMING EDUCATION</text>
+<text x="32" y="78" font-size="37" fill="#F4F4F2" font-weight="800" >GOCO AI</text>
+<text x="968" y="68" font-size="18" fill="#A3AAA7" font-weight="400" text-anchor="end">Co-Founder &amp; AI/ML Developer</text>
+<path d="M32 97H968" stroke="#293130"/>
+<text x="32" y="124" font-size="18" fill="#5DD6C7" font-weight="400" >FastAPI · JavaCC · SQLite · Ollama · Qwen</text></g>
 </svg>
