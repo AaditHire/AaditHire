@@ -1,79 +1,67 @@
-<!-- HERO -->
-<img src="assets/header.svg" width="100%" alt="Aadit Hire — AI/ML Engineer · Agentic Systems · Motorsport Analytics. Mumbai, India. Python, ML and LLM systems. F1 + Financial ML. George Russell fan." />
+# Aadit Hire
 
-<!-- ABOUT -->
-I'm Aadit, an AI/ML engineer from Mumbai. I like building models that help make useful decisions. Right now, that means race strategy, financial research, and agentic AI. On race weekends, I'm cheering for George Russell.
+**AI/ML Engineer · Agentic Systems · Motorsport Analytics**
 
-<!-- PROJECTS -->
-## What I'm building
+Mumbai, India
 
-<a href="https://github.com/AaditHire/f1-virtual-pitwall-V2">
-  <img src="assets/project-pitwall.svg" width="100%" alt="F1 Virtual Pitwall V2. Held-out 5-lap PIT transition MAE: 5.207s, down from 6.789s. 97 offline + 21 live tests. Python · FastAPI · FastF1 · Pydantic." />
-</a>
+[LinkedIn](https://linkedin.com/in/aadit-hire) · [Email](mailto:hire.aadit@gmail.com) · [GitHub](https://github.com/AaditHire)
 
-Replays historical races without leaking future information, then models pit, tyre, and traffic decisions.
+I'm Aadit, an AI/ML engineer from Mumbai. I build applied ML and AI systems, with most of my current work focused on Formula 1 race strategy, financial research, and agentic systems. On race weekends, I'm cheering for George Russell.
 
-[View Pitwall →](https://github.com/AaditHire/f1-virtual-pitwall-V2)
+## Featured projects
 
-<a href="https://github.com/AaditHire/FinPulse">
-  <img src="assets/project-finpulse.svg" width="100%" alt="FinPulse — financial research for equities and crypto. Next.js · Python · Supabase · pgvector · MCP." />
-</a>
+### 🏎️ F1 Virtual Pitwall V2
 
-A financial research terminal bringing portfolio analytics, SEC/news retrieval, RAG, specialist agents, and MCP tools together.
+AI-powered Formula 1 race strategy that reconstructs historical races lap-by-lap without future-data leakage and models tyre, traffic, and pit decisions.
 
-[View FinPulse →](https://github.com/AaditHire/FinPulse)
+**Held-out 5-lap PIT MAE: 6.789s → 5.207s**
 
-<img src="assets/project-goco.svg" width="100%" alt="GOCO AI — Co-Founder and AI/ML Developer. FastAPI · JavaCC · SQLite · Ollama · Qwen." />
+`Python · FastAPI · FastF1 · Pydantic`
 
-AI infrastructure for competitive programming and learning, with learner modelling, coding workflows, and contest-safe assistance.
+[View repository →](https://github.com/AaditHire/f1-virtual-pitwall-V2)
 
-<!-- GOCO_PUBLIC_URL: add a verified public URL when available. -->
+### FinPulse
 
-<!-- STACK -->
-## Tech I work with
+Financial research combining portfolio analytics, SEC/news retrieval, RAG, specialist agents, and MCP tools.
 
-<p><strong>AI / ML</strong><br/>
-<code>Python</code> <code>PyTorch</code> <code>Scikit-learn</code> <code>Hugging Face</code></p>
+`Next.js · Python · Supabase · pgvector · MCP`
 
-<p><strong>AI Systems</strong><br/>
-<code>RAG</code> <code>MCP</code> <code>Agents</code> <code>Ollama</code> <code>pgvector</code></p>
+[View repository →](https://github.com/AaditHire/FinPulse)
 
-<p><strong>Backend / Data</strong><br/>
-<code>FastAPI</code> <code>PostgreSQL</code> <code>Supabase</code> <code>Docker</code></p>
+### GOCO AI
 
-<p><strong>Web</strong><br/>
-<code>Next.js</code> <code>React</code> <code>Node.js</code></p>
+AI systems for GOCO's programming-learning and competitive-coding platform, including learner modelling, coding workflows, and contest-safe assistance.
 
-<!-- TELEMETRY -->
-## On GitHub
+`FastAPI · JavaCC · SQLite · Ollama · Qwen`
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="output/github-stats-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="output/github-stats.svg" />
-  <img src="output/github-stats.svg" width="100%" alt="GitHub contributions, public repository and star counts, and top primary languages by public non-fork repository count. Dated snapshot fetched directly from GitHub." />
-</picture>
+<!-- GOCO: no verified public repository URL available. -->
 
-[Repositories](https://github.com/AaditHire?tab=repositories) · [Pitwall commits](https://github.com/AaditHire/f1-virtual-pitwall-V2/commits/main) · [FinPulse commits](https://github.com/AaditHire/FinPulse/commits/main) · [FinPulse workflows](https://github.com/AaditHire/FinPulse/actions)
+## Tech stack
 
-<!-- DEVELOPMENT LAP -->
-## Development lap
+**AI / ML** · Python · PyTorch · Scikit-learn · TensorFlow · Hugging Face
+
+**AI Systems** · LLMs · RAG · MCP · Agents · Ollama · pgvector
+
+**Backend / Data** · FastAPI · PostgreSQL · Supabase · Docker
+
+**Web** · Next.js · React · Node.js
+
+## GitHub Metrics
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="output/contribution-racer-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="output/contribution-racer.svg" />
-  <img src="output/contribution-racer.svg" width="100%" alt="An original race car drives through my real GitHub contribution grid, leaving a turquoise trail and highlighting active days. The calendar stays visible. Animation stops with reduced motion." />
+  <img src="github-metrics.svg" alt="GitHub profile metrics, generated by lowlighter Metrics." width="600" />
 </picture>
 
-<sub><a href="https://github.com/AaditHire?tab=overview">Contribution history</a> · <a href="scripts/GITHUB-VISUALS.md">How it's made</a></sub>
+## Contribution activity
 
-<!-- RESEARCH -->
-## Currently exploring
+<picture>
+  <img src="github-contributions.svg" alt="Full-year isometric contribution calendar, generated by lowlighter Metrics." width="600" />
+</picture>
 
-Local LLMs, agent evaluation, race-strategy simulation, financial ML, and reinforcement learning.
+<sub>Generated daily with <a href="https://github.com/lowlighter/metrics">lowlighter/metrics</a> · <a href="https://github.com/AaditHire/AaditHire/actions/workflows/metrics.yml">Refresh history</a></sub>
 
-<!-- CONTACT -->
----
+## Contact
 
 Have something interesting in mind? [Let's talk.](mailto:hire.aadit@gmail.com)
 
-[GitHub](https://github.com/AaditHire) · [LinkedIn](https://linkedin.com/in/aadit-hire) · [Email](mailto:hire.aadit@gmail.com)
+[LinkedIn](https://linkedin.com/in/aadit-hire) · [Email](mailto:hire.aadit@gmail.com) · [GitHub](https://github.com/AaditHire)
