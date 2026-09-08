@@ -32,10 +32,17 @@ AI infrastructure for competitive programming and learning, with learner modelli
 <!-- STACK -->
 ## Tech I work with
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/stack-mobile.svg" />
-  <img src="assets/stack.svg" width="100%" alt="AI/ML: Python, PyTorch, Scikit-learn, Hugging Face. AI Systems: RAG, MCP, Agents, Ollama, pgvector. Backend/Data: FastAPI, PostgreSQL, Supabase, Docker. Web: Next.js, React, Node.js." />
-</picture>
+<p><strong>AI / ML</strong><br/>
+<code>Python</code> <code>PyTorch</code> <code>Scikit-learn</code> <code>Hugging Face</code></p>
+
+<p><strong>AI Systems</strong><br/>
+<code>RAG</code> <code>MCP</code> <code>Agents</code> <code>Ollama</code> <code>pgvector</code></p>
+
+<p><strong>Backend / Data</strong><br/>
+<code>FastAPI</code> <code>PostgreSQL</code> <code>Supabase</code> <code>Docker</code></p>
+
+<p><strong>Web</strong><br/>
+<code>Next.js</code> <code>React</code> <code>Node.js</code></p>
 
 <!-- TELEMETRY -->
 ## On GitHub
