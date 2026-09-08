@@ -7,7 +7,7 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=AaditHire&style=for-the-badge&color=22D3EE&label=Profile+Views" alt="Profile views" />
-  <a href="[www.linkedin.com/in/aadit-hire-24a343320">](https://www.linkedin.com/in/aadit-hire-24a343320/)
+  <a href="[www.linkedin.com/in/aadit-hire-24a343320">
     <img src="https://img.shields.io/badge/LinkedIn-Aadit_Hire-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="https://github.com/AaditHire?tab=followers">
