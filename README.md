@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Aadit Hire 👋</h1>
 
 <p align="center">
-  <strong>AI/ML Engineer · Agentic Systems · 🏎️ Motorsport Analytics</strong><br/>
+  <strong>Co-Founder & AI/ML Developer @ GOCO | AI/ML Engineer | Data Engineer</strong><br/>
   <sub>Mumbai, India</sub>
 </p>
 
