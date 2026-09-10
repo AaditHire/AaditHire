@@ -1,0 +1,38 @@
+const {chromium}=require('C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('assert/strict');
+(async()=>{
+ const browser=await chromium.launch({headless:true});
+ const page=await browser.newPage({viewport:{width:1280,height:900},colorScheme:'dark'});
+ await page.goto('https://github.com/AaditHire',{waitUntil:'networkidle'});
+ const profile=page.locator('.markdown-body').filter({hasText:"What I'm building"});
+ await profile.waitFor();
+ const images=await profile.locator('img').evaluateAll(imgs=>imgs.map(i=>({src:i.currentSrc,loaded:i.complete&&i.naturalWidth>0})));
+ assert.ok(images.length>=6&&images.every(i=>i.loaded));
+ console.log('Live GitHub images:',images);
+ await page.screenshot({path:'tmp/profile-preview/live-desktop.png',fullPage:true});
+ await page.setViewportSize({width:390,height:844});
+ await page.screenshot({path:'tmp/profile-preview/live-mobile.png',fullPage:true});
+ assert.equal(await profile.locator('code').count(),16);
+ const embedded=await profile.locator('img').evaluateAll(imgs=>imgs.map(i=>i.currentSrc));
+ // Test the actual image URLs GitHub selected, including its sanitizer/proxy path.
+ const header=embedded.find(u=>u.includes('header.svg'));
+ const racer=embedded.find(u=>u.includes('contribution-racer'));
+ await page.setViewportSize({width:1000,height:350});
+ await page.goto(header,{waitUntil:'networkidle'});
+ assert.equal(await page.locator('.track-marker').evaluate(e=>e.getAnimations().length),1);
+ await page.emulateMedia({reducedMotion:'reduce'});
+ assert.equal(await page.locator('.track-marker').evaluate(e=>e.getAnimations().length),0);
+ await page.emulateMedia({reducedMotion:'no-preference'});
+ await page.goto(racer,{waitUntil:'networkidle'});
+ assert.equal(await page.locator('.car').evaluate(e=>e.getAnimations().length),1);
+ const car=page.locator('.car');
+ await car.evaluate(e=>{e.getAnimations()[0].pause();e.getAnimations()[0].currentTime=0});
+ const a=await car.boundingBox();
+ await car.evaluate(e=>e.getAnimations()[0].currentTime=5000);
+ const b=await car.boundingBox();
+ assert.ok(Math.hypot(a.x-b.x,a.y-b.y)>20);
+ await page.emulateMedia({reducedMotion:'reduce'});
+ assert.equal(await page.evaluate(()=>document.getAnimations().length),0);
+ console.log('Hosted SVG animation and reduced motion: passed');
+ await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

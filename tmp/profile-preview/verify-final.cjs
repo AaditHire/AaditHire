@@ -1,0 +1,22 @@
+const fs = require('fs');
+const path = require('path');
+const { pathToFileURL } = require('url');
+const base = 'C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
+const { chromium } = require(base + '/playwright');
+(async () => {
+  const { marked } = await import(pathToFileURL(base + '/marked/lib/marked.esm.js').href);
+  const root = process.cwd();
+  const output = path.join(root, 'tmp/profile-preview');
+  const html = marked.parse(fs.readFileSync('README.md', 'utf8'));
+  fs.writeFileSync(path.join(output, 'index.html'), `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Aadit Hire — Profile Preview</title><base href="${pathToFileURL(root + '/').href}"><style>*{box-sizing:border-box}body{margin:0;background:#0d1117;color:#e6edf3;font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}main{max-width:1012px;margin:24px auto;padding:32px;border:1px solid #30363d;border-radius:8px}a{color:#79c0ff;text-decoration:none}h2{font-size:24px;border-bottom:1px solid #30363d;padding-bottom:8px;margin-top:28px}h3{font-size:20px}img{max-width:100%;height:auto}table{display:block;max-width:100%;overflow:auto;border-collapse:collapse}th,td{padding:6px 13px;border:1px solid #30363d;text-align:left}tr:nth-child(2n){background:#161b22}code{background:#262c36;border-radius:5px;padding:3px 6px;font-size:85%}hr{border:0;height:1px;background:#30363d;margin:24px 0}sub{font-size:12px} @media(max-width:600px){main{margin:0;padding:16px;border:0}body{font-size:14px}}</style><main>${html}</main></html>`);
+  const browser = await chromium.launch({headless:true});
+  const page = await browser.newPage({viewport:{width:1100,height:900}});
+  await page.goto(pathToFileURL(path.join(output, 'index.html')).href);
+  await page.locator('img').last().waitFor();
+  await page.screenshot({path:path.join(output,'profile-desktop.png'),fullPage:true});
+  console.log('Images:', await page.locator('img').evaluateAll(imgs=>imgs.map(i=>({src:i.getAttribute('src'),loaded:i.complete&&i.naturalWidth>0}))));
+  await page.setViewportSize({width:390,height:844});
+  await page.screenshot({path:path.join(output,'profile-mobile.png'),fullPage:true});
+  console.log('Mobile overflow:',await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth));
+  await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

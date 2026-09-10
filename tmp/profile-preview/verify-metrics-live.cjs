@@ -1,0 +1,32 @@
+const {chromium}=require('C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('assert/strict');
+(async()=>{
+ const browser=await chromium.launch({headless:true});
+ const page=await browser.newPage({viewport:{width:1200,height:900},colorScheme:'dark'});
+ await page.goto('https://github.com/AaditHire',{waitUntil:'networkidle'});
+ const article=page.locator('.markdown-body').filter({hasText:'Featured projects'});
+ await article.waitFor();
+ const images=await article.locator('img').evaluateAll(imgs=>imgs.map(i=>({src:i.currentSrc,loaded:i.complete&&i.naturalWidth>0})));
+ assert.equal(images.length,2); assert.ok(images.every(i=>i.loaded));
+ assert.equal(await article.locator('h1').innerText(),'Aadit Hire');
+ assert.ok(!(await article.innerText()).includes('Development lap'));
+ await page.screenshot({path:'tmp/profile-preview/metrics-profile-dark.png',fullPage:true});
+ await page.setViewportSize({width:390,height:844});
+ await page.screenshot({path:'tmp/profile-preview/metrics-profile-mobile.png',fullPage:true});
+ assert.ok(await article.evaluate(e=>e.scrollWidth<=e.clientWidth+1));
+ await page.emulateMedia({colorScheme:'light',reducedMotion:'reduce'});
+ await page.screenshot({path:'tmp/profile-preview/metrics-profile-light.png',fullPage:true});
+ console.log('Live README:',images,'Mobile overflow: none');
+ await page.setViewportSize({width:650,height:400});
+ await page.goto(images[0].src,{waitUntil:'networkidle'});
+ const rendered=await page.locator('foreignObject').textContent();
+ assert.match(rendered,/Aadit Hire/);
+ assert.doesNotMatch(rendered,/1 Repository|1 Language|Most used languages/);
+ await page.screenshot({path:'tmp/profile-preview/metrics-verified-header.png'});
+ console.log('Metrics header:',rendered.trim());
+ await page.goto(images[1].src,{waitUntil:'networkidle'});
+ assert.match(await page.locator('foreignObject').textContent(),/Contributions calendar/);
+ await page.screenshot({path:'tmp/profile-preview/metrics-verified-calendar.png'});
+ await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});
+
